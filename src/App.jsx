@@ -5,7 +5,7 @@ import Home from "./home/Home";
 import About from "./about/About";
 import Login from "./login/login";
 import AllProducts from "./allProducts/AllProducts";
-import Cart from "./components/cart/cart";
+import Cart from "./components/cart/Cart";
 import "./App.css";
 
 import { useDispatch } from "react-redux";
