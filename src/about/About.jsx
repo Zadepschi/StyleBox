@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BackToTopButton from "./BackToTopButton";
 import { data } from "../data/aboutData";
-import "./About.css";
+import "./about.css";
 
 function About() {
  
