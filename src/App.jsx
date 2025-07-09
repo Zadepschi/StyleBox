@@ -48,12 +48,12 @@ export default function App() {
       </div>
 
       <nav className="navbar">
-        <div className="logo">
-         
-        <span class="style-dark">Style</span><span class="box-dark">BOX</span>
-         
-        </div>
-
+       <div className="logo">
+    <Link to="/" onClick={() => { setMenuOpen(false); closeDropdown(); }} style={{ textDecoration: 'none' }}>
+      <span className="style-dark">Style</span>
+      <span className="box-dark">BOX</span>
+    </Link>
+  </div>
         <input
           type="checkbox"
           id="menu-toggle"

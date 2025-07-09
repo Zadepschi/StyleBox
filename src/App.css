@@ -171,7 +171,7 @@ transform: translateY(0);
 
   .nav-links {
     position: absolute;
-    top: 65px;
+    top: 54px;
     left: 0;
     right: 0;
     background: #f3f6fc;
@@ -201,6 +201,8 @@ transform: translateY(0);
     background: #edf2f7;
     box-shadow: none;
     width: 100%;
+    
+
   }
 
   .dropdown:hover .dropdown-menu {
@@ -219,6 +221,7 @@ transform: translateY(0);
   .dropdown-menu {
     display: none;
     flex-direction: column;
+    
   }
 
   .dropdown.active .dropdown-menu {
@@ -299,5 +302,9 @@ transform: translateY(0);
     font-size: 30px;
  
   }
+  .nav-links {
+ 
+    top: 47px;
 
+  }
 }
