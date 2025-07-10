@@ -70,14 +70,20 @@
   background-color: rgb(225, 204, 241);
   cursor: pointer;
   transition: background-color 0.2s ease;
+  box-shadow: 8px 8px 15px #bebebe,  -8px -8px 15px #ffffff;
 }
 
 .minusPlusChild button:hover {
-  background-color: #574b90;
+  background-color: #b4acda;
+    box-shadow: inset 4px 4px 8px #bebebe,
+              inset -4px -4px 8px #ffffff;
+  color: #222;
+  transform: translateY(-2px);
 }
 
 .addToCartButton {
   margin-top: 12px;
+  
 }
 
 .addToCartButton button {
@@ -91,6 +97,7 @@
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  box-shadow: 8px 8px 15px #bebebe,  -8px -8px 15px #ffffff;
   
 }
 

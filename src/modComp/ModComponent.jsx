@@ -15,7 +15,7 @@ const Modal = ({ active, setActive, children }) => {
         >
           {children}
         </div>
-      
+  
       </div>
     </div>
   );

@@ -7,9 +7,14 @@ import Login from "./login/login";
 import AllProducts from "./allProducts/AllProducts";
 import Cart from "./components/cart/Cart";
 import "./App.css";
-
+import CheckoutPage from "./checkoutPage/CheckoutPage";
+import Stripe from "./Stripe/StripeContainer";
 import { useDispatch } from "react-redux";
 import { filterCategory } from "./redux/clothesSlice";
+
+
+
+
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,7 +51,7 @@ export default function App() {
       <div className="clockFix">
         <ClockApp />
       </div>
-
+     
       <nav className="navbar">
        <div className="logo">
     <Link to="/" onClick={() => { setMenuOpen(false); closeDropdown(); }} style={{ textDecoration: 'none' }}>
@@ -95,12 +100,15 @@ export default function App() {
 
         <Cart />
       </nav>
-
+  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<AllProducts />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/checkout-form" element={<Stripe />} />
+
       </Routes>
     </div>
   );

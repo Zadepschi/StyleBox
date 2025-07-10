@@ -37,6 +37,7 @@ transform: scale(1);
 
 }
 
+
 @media all and (max-width: 912px) {
     .modal_content {
         width: 70vw;
@@ -62,6 +63,9 @@ transform: scale(1);
       }
     }
     @media all and (max-width: 414px) {
+        .modal_content {
+        width: 90vw;
+    }
         .modalCart {
             padding: 3px;
         }
@@ -98,4 +102,7 @@ transform: scale(1);
         img.trashIcon {
             width: 30px;
         }
+              .modal_content {
+        width: 95vw;
+    }
     }

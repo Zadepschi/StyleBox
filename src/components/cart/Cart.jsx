@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import Modal from "../../modComp/ModComponent";
 import {
   emptyCart,
@@ -16,6 +17,12 @@ const Cart = () => {
   const totalQuantity = useSelector(getTotalQuantity);
   const dispatch = useDispatch();
   const [modalActive, setModalActive] = useState(false);
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    setModalActive(false);
+    navigate("/checkout");
+  };
 
   return (
     <div className="deleteAllDiv">
@@ -35,7 +42,7 @@ const Cart = () => {
         <span className="shop-cart__badge">{totalQuantity}</span>
       </div>
 
-      <Modal active={modalActive} setActive={setModalActive}>
+      <Modal active={modalActive} setActive={setModalActive} cartItems={cartItems}>
         <div className="cartModalContent">
           <div className="cartHeader">
             <div className="cartTotals">
@@ -56,6 +63,15 @@ const Cart = () => {
               <p className="emptyMessage">Your cart is empty 😢</p>
             )}
           </div>
+
+          {/* КНОПКА CHECKOUT */}
+          {cartItems.length > 0 && (
+            <div className="checkout-container">
+              <button className="checkout-button" onClick={handleCheckout}>
+                Checkout
+              </button>
+            </div>
+          )}
         </div>
       </Modal>
     </div>
