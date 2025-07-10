@@ -22,7 +22,7 @@ opacity: 1 ;
 .modal_content {
     padding: 20px;
     border-radius: 15px;
-    background: linear-gradient(90deg, #f3f6fc 0%, #edf2f7 100%);
+ background-color: rgb(247, 242, 252);
  transform: scale(0.5);
  transition: 0.4s all;
  width: 50vw;

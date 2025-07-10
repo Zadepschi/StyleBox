@@ -23,6 +23,35 @@ export const CheckoutForm = () => {
 
   return (
     <div className="checkout-wrapper">
+
+      <div className="test-card">
+  <div className="card-mock">
+    <div className="card-chip"></div>
+    <div className="card-number">
+      4242 4242 4242 4242
+      <button
+        className="copy-btn"
+        onClick={(e) => {
+          e.preventDefault();
+          navigator.clipboard.writeText("4242 4242 4242 4242");
+        }}
+        title="Copy to clipboard"
+      >
+        📋
+      </button>
+    </div>
+    <div className="card-details">
+      <span>12/34</span>
+      <span>CVC: 123</span>
+    </div>
+    <div className="card-holder">TEST USER</div>
+  </div>
+  <p className="card-note">
+    ⚠️ This is a <strong>test card</strong> for demo purposes. Do not enter real payment data.
+  </p>
+</div>
+
+      
       <h2 className="title">Order Payment</h2>
 
       <div className="total-amount">
